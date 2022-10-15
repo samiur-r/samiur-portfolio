@@ -1,4 +1,4 @@
-# Boshamlan
+# NextJs starter kit
 
 ## Features
 
