@@ -1,4 +1,4 @@
-# NextJs starter kit
+# Boshamlan
 
 ## Features
 
@@ -20,8 +20,8 @@
 ## Getting started
 
 ```
-git clone https://github.com/q8villa/boshamlan-frontend.git
-cd boshamlan-frontend
+git clone https://github.com/samiur-r/next-starter-kit.git
+cd next-starter-kit
 yarn install
 yarn run dev
 ```
@@ -46,7 +46,7 @@ yarn run start
 
 ### lint
 
-Runs ESLint static code analysis based on your `.eslintrc` configuration
+Runs ESLint static code analysis based on your `.eslintrc.json` configuration
 
 ```bash
 yarn run lint
@@ -57,7 +57,13 @@ yarn run lint
 Runs Jest unit tests to validate changes between commits
 
 ```bash
-yarn run test
+yarn run test:unit
+```
+
+Runs Cypress e2e tests to validate changes between commits
+
+```bash
+yarn run test:e2e
 ```
 
 ### Contributing
