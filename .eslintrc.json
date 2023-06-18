@@ -9,8 +9,7 @@
     "plugin:@typescript-eslint/recommended",
     "airbnb",
     "airbnb-typescript",
-    "plugin:prettier/recommended",
-    "plugin:jest-dom/recommended"
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -21,6 +20,9 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "no-plusplus": "off",
+    "react/button-has-type": "off",
+    "jsx-a11y/anchor-is-valid": "off",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
