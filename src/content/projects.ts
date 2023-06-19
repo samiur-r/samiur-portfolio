@@ -37,10 +37,10 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Web3',
-    href: '/project/babyapesrescue',
-    thumbnail: '/projects/babyapesrescue/1.png',
-    tech: 'Next, Material UI, Web3'
+    title: 'VenueQ',
+    href: '/project/venueq',
+    thumbnail: '/projects/venueq/1.png',
+    tech: 'Next, TailwindCSS, Node, MongoDB'
   },
   {
     id: 7,
@@ -51,10 +51,10 @@ const projects = [
   },
   {
     id: 8,
-    title: 'VenueQ',
-    href: '/project/venueq',
-    thumbnail: '/projects/venueq/1.png',
-    tech: 'Next, TailwindCSS, Node, MongoDB'
+    title: 'Web3',
+    href: '/project/babyapesrescue',
+    thumbnail: '/projects/babyapesrescue/1.png',
+    tech: 'Next, Material UI, Web3'
   },
   {
     id: 9,

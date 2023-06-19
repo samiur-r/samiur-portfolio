@@ -1,11 +1,13 @@
+import type { NextPage } from 'next'
+import Head from 'next/head'
+
 import About from 'components/About'
+import Experience from 'components/Experience'
 import Hero from 'components/Hero'
 import Nav from 'components/Nav'
 import Projects from 'components/Projects'
 import Services from 'components/Services'
 import Skills from 'components/Skills'
-import type { NextPage } from 'next'
-import Head from 'next/head'
 // import Image from 'next/image'
 
 const Home: NextPage = () => {
@@ -62,6 +64,7 @@ const Home: NextPage = () => {
         <Skills />
         <Services />
         <Projects />
+        <Experience />
         <section className="bg-gray-100 py-8">
           <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
             <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
