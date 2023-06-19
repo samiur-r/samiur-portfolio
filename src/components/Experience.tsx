@@ -12,20 +12,20 @@ const Experience = () => {
         <div className="w-full mb-4">
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
         </div>
-        <ul className="divide-y divide-[#34e89e]">
+        <ul className="divide-y divide-[#34e89e] mx-5">
           {jobs.map((job) => (
             <li key={job.id} className="flex py-6 sm:py-10">
               <div className="flex-shrink-0">
                 <Image
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                   src={job.logo}
                   alt="company-logo"
                   className="object-cover"
                 />
               </div>
               <div className="ml-5 w-full max-w-3xl flex flex-col gap-3">
-                <div className="flex justify-between">
+                <div className="flex flex-col md:flex-row justify-between">
                   <a
                     href={job.url}
                     className="font-bold text-xl"

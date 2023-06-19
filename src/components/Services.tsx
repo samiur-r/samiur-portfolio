@@ -42,7 +42,7 @@ const Services = () => {
                   E-commerce, FinTech, ERP, CRM, Real Estate, Marketplace,
                   Learning Management Systems (LMS), Logistics, Social Networks,
                   Healthcare, and more. I ensure:
-                  <div className="mt-3 flex flex-col gap-2">
+                  <div className="mt-3 flex flex-col gap-2 font-semibold">
                     <p>- 100% Clean code and High quality </p>
                     <p>- 100% On-Time delivery </p>
                     <p>- 100% Client Satisfaction</p>

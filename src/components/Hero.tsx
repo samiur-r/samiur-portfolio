@@ -15,9 +15,12 @@ const Hero = () => {
             Empowering businesses with elegant and robust digital solutions
             through cutting-edge solutions.
           </p>
-          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <a
+            href="mailto:samiur.rahman.akif@gmail.com"
+            className="inline-block mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
             Book a call with me
-          </button>
+          </a>
         </div>
         {/* Right Col */}
         <div className="w-full md:w-3/5 py-6 text-center">
