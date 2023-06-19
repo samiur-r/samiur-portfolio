@@ -39,7 +39,7 @@ const Nav = () => {
         <div className="block lg:hidden pr-4">
           <button
             id="nav-toggle"
-            className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             <svg
               className="fill-current h-6 w-6"
