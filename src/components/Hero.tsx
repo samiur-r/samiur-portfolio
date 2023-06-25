@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
           <p className="leading-normal text-2xl mb-8">
             Empowering businesses with elegant and robust digital solutions
-            through cutting-edge solutions.
+            through cutting-edge technologies.
           </p>
           <a
             href="mailto:samiur.rahman.akif@gmail.com"

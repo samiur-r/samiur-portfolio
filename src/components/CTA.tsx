@@ -2,7 +2,7 @@ import React from 'react'
 
 const CTA = () => {
   return (
-    <section id="contact" className="container mx-auto text-center py-6 mb-12">
+    <section id="contact" className="container mx-auto text-center p-6 mb-12">
       <h2 className="w-full my-2 text-3xl font-bold leading-tight text-center text-white">
         Let&apos;s Build Something Extraordinary Together!
       </h2>

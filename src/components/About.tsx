@@ -4,7 +4,7 @@ import Image from 'next/image'
 const About = () => {
   return (
     <section className="bg-[#0f3443] py-8">
-      <div className="container max-w-6xl mx-auto m-8">
+      <div className="container max-w-6xl mx-auto mt-8">
         <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center white">
           About Me
         </h2>

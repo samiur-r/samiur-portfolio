@@ -1,9 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { Bars3Icon } from '@heroicons/react/24/solid'
+import MobileNav from './MobileNav'
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 10)
@@ -22,6 +29,7 @@ const Nav = () => {
       id="header"
       className={`${isScrolled ? 'bg-[#0f3443]' : ''} fixed w-full z-30 top-0`}
     >
+      {isOpen && <MobileNav open={isOpen} handleSetOpen={setIsOpen} />}
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link href="/">
@@ -41,14 +49,10 @@ const Nav = () => {
             id="nav-toggle"
             className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
-            <svg
-              className="fill-current h-6 w-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
+            <Bars3Icon
+              className="w-9 h-9 text-[#34e89e]"
+              onClick={toggleMenu}
+            />
           </button>
         </div>
         <div
@@ -71,13 +75,13 @@ const Nav = () => {
                 Projects
               </a>
             </li>
-            <li className="mr-3">
+            {/* <li className="mr-3">
               <Link href="/blog">
                 <a className="inline-block no-underline hover:text-[#34e89e] hover:text-underline py-2 px-4">
                   Blog
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
           <a
             href="#contact"
