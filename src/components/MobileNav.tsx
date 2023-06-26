@@ -35,7 +35,11 @@ interface MobileNavProps {
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-50 overflow-hidden" onClose={handleSetOpen}>
+      <Dialog
+        as="div"
+        className="relative z-50 overflow-hidden"
+        onClose={handleSetOpen}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
