@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const handleSetOpen = (open: boolean) => {
     setTimeout(() => {
       setIsOpen(open)
-    }, 100)
+    }, 300)
   }
   return (
     <div>
