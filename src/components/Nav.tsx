@@ -6,7 +6,7 @@ import MobileNav from './MobileNav'
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 10)
