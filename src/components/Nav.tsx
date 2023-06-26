@@ -76,9 +76,10 @@ const Nav = () => {
           </ul>
           <a
             href="#contact"
-            className={`${
-              isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
-            } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
+            // className={`${
+            //   isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
+            // } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
+            className="x-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             Get in touch
           </a>
