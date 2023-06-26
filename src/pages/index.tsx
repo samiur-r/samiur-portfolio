@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {isOpen && <MobileNav open={isOpen} handleSetOpen={setIsOpen} />}
+      <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
       <div className="leading-normal tracking-normal text-white gradient">
         <Nav handleSetOpen={setIsOpen} />
         <Hero />
