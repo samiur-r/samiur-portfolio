@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       </Head>
       <MobileNav open={isOpen} handleSetOpen={handleSetOpen} />
       <div className="leading-normal tracking-normal text-white gradient">
-        <Nav handleSetOpen={handleSetOpen} />
+        <Nav handleSetOpen={handleSetOpen} open={isOpen} />
         <Hero />
         <div className="relative -mt-12 lg:-mt-24 ">
           <svg

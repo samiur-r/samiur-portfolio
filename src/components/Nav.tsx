@@ -4,10 +4,11 @@ import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 
 interface NavProps {
+  open: boolean
   handleSetOpen: (open: boolean) => void
 }
 
-const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
+const Nav: React.FC<NavProps> = ({ open, handleSetOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const handleScroll = () => {
@@ -44,7 +45,7 @@ const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
           <div className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <Bars3Icon
               className="w-9 h-9 text-[#34e89e]"
-              onClick={() => handleSetOpen((isOpen) => !isOpen)}
+              onClick={() => handleSetOpen(!open)}
             />
           </div>
         </div>
