@@ -13,21 +13,13 @@ import Research from 'components/Research'
 import CTA from 'components/CTA'
 import Footer from 'components/Footer'
 import MobileNav from 'components/MobileNav'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false)
   const handleSetOpen = (open: boolean) => {
     setIsOpen(open)
   }
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
 
   return (
     <div>

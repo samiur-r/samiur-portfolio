@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
@@ -33,6 +33,18 @@ interface MobileNavProps {
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add('disable-scroll')
+    } else {
+      document.body.classList.remove('disable-scroll')
+    }
+
+    return () => {
+      document.body.classList.remove('disable-scroll')
+    }
+  }, [open])
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
