@@ -33,10 +33,6 @@ interface MobileNavProps {
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
-  useEffect(() => {
-    if (!open) document.body.style.overflow = 'unset'
-  }, [open])
-
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
