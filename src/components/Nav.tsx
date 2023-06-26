@@ -46,9 +46,7 @@ const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
               className="w-9 h-9 text-[#34e89e]"
               onClick={() => {
                 document.body.style.overflow = 'hidden'
-                setTimeout(() => {
-                  handleSetOpen(true)
-                }, 500)
+                handleSetOpen(true)
               }}
             />
           </div>
