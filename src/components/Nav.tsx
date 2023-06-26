@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -9,17 +8,17 @@ const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
-  // const handleScroll = () => {
-  //   setIsScrolled(window.scrollY > 10)
-  // }
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 10)
+  }
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [])
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <nav
