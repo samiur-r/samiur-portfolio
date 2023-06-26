@@ -37,7 +37,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
     <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
-        className="fixed w-screen h-screen overflow-hidden z-50"
+        className="absolute w-screen h-screen overflow-hidden z-50"
         onClose={handleSetOpen}
       >
         <Transition.Child
