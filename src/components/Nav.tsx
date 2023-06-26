@@ -29,17 +29,12 @@ const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
-          <Link href="/">
-            <a className="text-white toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-              <Image
-                width={40}
-                height={40}
-                src="/rocket.svg"
-                className="mr-3"
-              />
-              SAM.
-            </a>
-          </Link>
+          {/* <Link href="/">
+            <a className="text-white toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl"> */}
+          <Image width={40} height={40} src="/rocket.svg" className="mr-3" />
+          SAM.
+          {/* </a>
+          </Link> */}
         </div>
         <div className="block lg:hidden pr-4">
           <div className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
