@@ -17,6 +17,11 @@ import { useState } from 'react'
 
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const handleSetOpen = (open: boolean) => {
+    setTimeout(() => {
+      setIsOpen(open)
+    }, 100)
+  }
   return (
     <div>
       <Head>
@@ -26,7 +31,7 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
+      <MobileNav open={isOpen} handleSetOpen={handleSetOpen} />
       <div className="leading-normal tracking-normal text-white gradient">
         <Nav handleSetOpen={setIsOpen} />
         <Hero />

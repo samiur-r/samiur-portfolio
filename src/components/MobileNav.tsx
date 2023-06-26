@@ -29,7 +29,7 @@ const social = [
 
 interface MobileNavProps {
   open: boolean
-  handleSetOpen: Dispatch<SetStateAction<boolean>>
+  handleSetOpen: (open: boolean) => void
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
