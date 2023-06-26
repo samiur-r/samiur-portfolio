@@ -1,33 +1,31 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
+import MobileNav from './MobileNav'
 
-interface NavProps {
-  handleSetOpen: Dispatch<SetStateAction<boolean>>
-}
+const Nav = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
-  const [isScrolled, setIsScrolled] = useState(true)
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 10)
+  }
 
-  // const handleScroll = () => {
-  //   setIsScrolled(window.scrollY > 10)
-  // }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
 
-  // useEffect(() => {
-  //   document.addEventListener('scroll', handleScroll)
-
-  //   return () => {
-  //     document.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [])
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <nav
       id="header"
       className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
     >
+      <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link href="/">
@@ -46,7 +44,7 @@ const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
           <div className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <Bars3Icon
               className="w-9 h-9 text-[#34e89e]"
-              onClick={() => handleSetOpen((isOpen) => !isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             />
           </div>
         </div>
