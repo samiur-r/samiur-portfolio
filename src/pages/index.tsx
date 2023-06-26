@@ -26,9 +26,9 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
       <div className="leading-normal tracking-normal text-white gradient">
         <Nav handleSetOpen={setIsOpen} />
-        <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
         <Hero />
         <div className="relative -mt-12 lg:-mt-24 ">
           <svg
