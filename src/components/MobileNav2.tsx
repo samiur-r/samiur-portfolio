@@ -60,7 +60,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
+                <Dialog.Panel className="pointer-events-auto relative w-screen max-w-xs">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-500"

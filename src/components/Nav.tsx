@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
-import MobileNav from './MobileNav'
+// import MobileNav from './MobileNav'
 import MobileNav2 from './MobileNav2'
 
 const Nav = () => {
