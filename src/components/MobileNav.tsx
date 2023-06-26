@@ -35,7 +35,7 @@ const social = [
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
+      <Dialog as="div" className="fixed h-full z-50" onClose={handleSetOpen}>
         <div className="fixed inset-0 bg-gray-600 opacity-90" />
 
         <div className="fixed inset-0 overflow-hidden">
@@ -57,7 +57,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900 -mt-3">
                           <Link href="/">
                             <a
-                              className="text-[#34e89e] no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                              className="text-[#34e89e] no-underline outline-none hover:no-underline font-bold text-2xl lg:text-4xl"
                               href="#"
                             >
                               <Image width={40} height={40} src="/rocket.svg" />
