@@ -34,7 +34,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   useEffect(() => {
-    if (!open) document.body.classList.remove('disable-scroll')
+    if (!open) document.body.style.overflow = 'unset'
   }, [open])
 
   return (
@@ -42,26 +42,26 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
       <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
         <Transition.Child
           as={Fragment}
-          // enter="ease-in-out duration-500"
-          // enterFrom="opacity-0"
-          // enterTo="opacity-100"
-          // leave="ease-in-out duration-500"
-          // leaveFrom="opacity-100"
-          // leaveTo="opacity-0"
+          enter="ease-in-out duration-500"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="ease-in-out duration-500"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-900 transition-opacity" />
+          <div className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" />
         </Transition.Child>
 
         <div className="absolute inset-0 overflow-hidden">
           <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
             <Transition.Child
               as={Fragment}
-              // enter="transform transition ease-in-out duration-500 sm:duration-700"
-              // enterFrom="translate-x-full"
-              // enterTo="translate-x-0"
-              // leave="transform transition ease-in-out duration-500 sm:duration-700"
-              // leaveFrom="translate-x-0"
-              // leaveTo="translate-x-full"
+              enter="transform transition ease-in-out duration-500 sm:duration-700"
+              enterFrom="translate-x-full"
+              enterTo="translate-x-0"
+              leave="transform transition ease-in-out duration-500 sm:duration-700"
+              leaveFrom="translate-x-0"
+              leaveTo="translate-x-full"
             >
               <Dialog.Panel className="pointer-events-auto relative w-screen max-w-xs">
                 <div className="flex h-full flex-col overflow-y-scroll bg-[#0f3443] py-6 shadow-xl">

@@ -18,7 +18,6 @@ import { useState } from 'react'
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false)
   const handleSetOpen = (open: boolean) => {
-    if (open) document.body.classList.add('disable-scroll')
     setIsOpen(open)
   }
 

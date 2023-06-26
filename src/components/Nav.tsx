@@ -45,7 +45,10 @@ const Nav: React.FC<NavProps> = ({ open, handleSetOpen }) => {
           <div className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <Bars3Icon
               className="w-9 h-9 text-[#34e89e]"
-              onClick={() => handleSetOpen(!open)}
+              onClick={() => {
+                document.body.style.overflow = 'hidden'
+                handleSetOpen(!open)
+              }}
             />
           </div>
         </div>
