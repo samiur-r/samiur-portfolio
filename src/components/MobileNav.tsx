@@ -65,10 +65,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
                     <div className="flex items-start justify-between">
                       <Dialog.Title className="text-base font-semibold leading-6 text-gray-900 -mt-3">
                         <Link href="/">
-                          <a
-                            className="text-[#34e89e] no-underline outline-none hover:no-underline font-bold text-2xl lg:text-4xl"
-                            href="#"
-                          >
+                          <a className="text-[#34e89e] no-underline outline-none hover:no-underline font-bold text-2xl lg:text-4xl">
                             <Image width={40} height={40} src="/rocket.svg" />
                             SAM.
                           </a>
