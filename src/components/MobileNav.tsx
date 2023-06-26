@@ -1,4 +1,4 @@
-import { Dispatch, Fragment, SetStateAction } from 'react'
+import { Dispatch, Fragment, SetStateAction, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
@@ -35,7 +35,11 @@ interface MobileNavProps {
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-30" onClose={handleSetOpen}>
+      <Dialog
+        as="div"
+        className="fixed w-screen h-screen overflow-hidden z-50"
+        onClose={handleSetOpen}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
