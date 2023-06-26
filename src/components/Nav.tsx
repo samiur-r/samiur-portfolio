@@ -1,32 +1,32 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import MobileNav from './MobileNav'
+// import MobileNav2 from './MobileNav2'
 
 const Nav = () => {
-  // const [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
-  // const handleScroll = () => {
-  //   setIsScrolled(window.scrollY > 10)
-  // }
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 10)
+  }
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [])
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <nav
-      // className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
-      className="bg-[#0f3443] sticky w-full z-30 top-0"
+      className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
     >
       <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
+      {/* <MobileNav2 open={isOpen} handleSetOpen={setIsOpen} /> */}
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link href="/">
@@ -76,10 +76,9 @@ const Nav = () => {
           </ul>
           <a
             href="#contact"
-            // className={`${
-            //   isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
-            // } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
-            className="x-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            className={`${
+              isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
+            } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
           >
             Get in touch
           </a>
