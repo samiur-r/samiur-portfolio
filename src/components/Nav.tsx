@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
-import MobileNav from './MobileNav'
 
-const Nav = () => {
+interface NavProps {
+  handleSetOpen: Dispatch<SetStateAction<boolean>>
+}
+
+const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 10)
@@ -22,24 +24,28 @@ const Nav = () => {
 
   return (
     <nav
-      // id="header"
+      id="header"
       className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
     >
-      <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
-          {/* <Link href="/"> */}
-          <a className="text-white toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-            <Image width={40} height={40} src="/rocket.svg" className="mr-3" />
-            SAM.
-          </a>
-          {/* </Link> */}
+          <Link href="/">
+            <a className="text-white toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+              <Image
+                width={40}
+                height={40}
+                src="/rocket.svg"
+                className="mr-3"
+              />
+              SAM.
+            </a>
+          </Link>
         </div>
         <div className="block lg:hidden pr-4">
           <div className="flex items-center p-1 text-[#34e89e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <Bars3Icon
               className="w-9 h-9 text-[#34e89e]"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => handleSetOpen((isOpen) => !isOpen)}
             />
           </div>
         </div>

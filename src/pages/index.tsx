@@ -12,9 +12,11 @@ import Testimonials from 'components/Testimonials'
 import Research from 'components/Research'
 import CTA from 'components/CTA'
 import Footer from 'components/Footer'
-// import Image from 'next/image'
+import { useState } from 'react'
+import MobileNav from 'components/MobileNav'
 
 const Home: NextPage = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <Head>
@@ -25,7 +27,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="leading-normal tracking-normal text-white gradient">
-        <Nav />
+        <Nav handleSetOpen={setIsOpen} />
+        <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
         <Hero />
         <div className="relative -mt-12 lg:-mt-24 ">
           <svg
