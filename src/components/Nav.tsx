@@ -59,7 +59,7 @@ const Nav = () => {
             <li className="mr-3">
               <a
                 className="inline-block no-underline hover:text-[#34e89e] hover:text-underline py-2 px-4"
-                // href="#projects"
+                href="#projects"
               >
                 Projects
               </a>
@@ -73,7 +73,7 @@ const Nav = () => {
             </li> */}
           </ul>
           <a
-            // href="#contact"
+            href="#contact"
             className={`${
               isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
             } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}

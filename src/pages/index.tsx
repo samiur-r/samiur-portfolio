@@ -1,21 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import About from 'components/About'
-import Experience from 'components/Experience'
+// import About from 'components/About'
+// import Experience from 'components/Experience'
 import Hero from 'components/Hero'
 import Nav from 'components/Nav'
-import Projects from 'components/Projects'
-import Services from 'components/Services'
-import Skills from 'components/Skills'
-import Testimonials from 'components/Testimonials'
-import Research from 'components/Research'
-import CTA from 'components/CTA'
-import Footer from 'components/Footer'
+// import Projects from 'components/Projects'
+// import Services from 'components/Services'
+// import Skills from 'components/Skills'
+// import Testimonials from 'components/Testimonials'
+// import Research from 'components/Research'
+// import CTA from 'components/CTA'
+// import Footer from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <Head>
         <title>Samiur</title>
         <meta name="description" content="Samiur" />
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <div className="leading-normal tracking-normal text-white gradient">
         <Nav />
         <Hero />
-        <div className="relative -mt-12 lg:-mt-24 ">
+        {/* <div className="relative -mt-12 lg:-mt-24 ">
           <svg
             viewBox="0 0 1428 174"
             version="1.1"
@@ -69,9 +69,9 @@ const Home: NextPage = () => {
         <Projects />
         <Experience />
         <Testimonials />
-        <Research />
+        <Research /> */}
         {/* Change the color #f8fafc to match the previous section color  */}
-        <svg
+        {/* <svg
           className="wave-top"
           viewBox="0 0 1439 147"
           version="1.1"
@@ -103,9 +103,9 @@ const Home: NextPage = () => {
           </g>
         </svg>
         <CTA />
-        <Footer />
+        <Footer /> */}
       </div>
-    </>
+    </div>
   )
 }
 
