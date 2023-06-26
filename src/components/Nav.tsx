@@ -4,11 +4,10 @@ import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 
 interface NavProps {
-  open: boolean
   handleSetOpen: (open: boolean) => void
 }
 
-const Nav: React.FC<NavProps> = ({ open, handleSetOpen }) => {
+const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const handleScroll = () => {
@@ -47,7 +46,9 @@ const Nav: React.FC<NavProps> = ({ open, handleSetOpen }) => {
               className="w-9 h-9 text-[#34e89e]"
               onClick={() => {
                 document.body.style.overflow = 'hidden'
-                handleSetOpen(!open)
+                setTimeout(() => {
+                  handleSetOpen(true)
+                }, 500)
               }}
             />
           </div>
