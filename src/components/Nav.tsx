@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 
 interface NavProps {
-  handleSetOpen: Dispatch<SetStateAction<boolean>>
+  handleSetOpen: (open: boolean) => void
 }
 
 const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {

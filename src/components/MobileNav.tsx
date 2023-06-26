@@ -34,15 +34,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   useEffect(() => {
-    if (open) {
-      document.body.classList.add('disable-scroll')
-    } else {
-      document.body.classList.remove('disable-scroll')
-    }
-
-    return () => {
-      document.body.classList.remove('disable-scroll')
-    }
+    if (!open) document.body.classList.remove('disable-scroll')
   }, [open])
 
   return (
