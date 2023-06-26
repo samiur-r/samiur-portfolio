@@ -18,19 +18,19 @@ import { useState } from 'react'
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false)
   const handleSetOpen = (open: boolean) => {
-    setTimeout(() => {
-      setIsOpen(open)
-    }, 300)
+    setIsOpen(open)
+    if (open) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
   }
   return (
     <div>
       <Head>
         <title>Samiur</title>
         <meta name="description" content="Samiur" />
-        <meta
-          name="viewport"
-          content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
