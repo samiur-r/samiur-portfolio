@@ -35,8 +35,8 @@ interface MobileNavProps {
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
-        {/* <Transition.Child
+      <Dialog as="div" className="relative z-50 overflow-hidden" onClose={handleSetOpen}>
+        <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
           enterFrom="opacity-0"
@@ -46,7 +46,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
           leaveTo="opacity-0"
         >
           <div className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" />
-        </Transition.Child> */}
+        </Transition.Child>
 
         <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
           <Transition.Child
