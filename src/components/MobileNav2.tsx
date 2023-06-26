@@ -61,29 +61,9 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto relative w-screen max-w-xs">
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-in-out duration-500"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="ease-in-out duration-500"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
-                  >
-                    <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
-                      <button
-                        type="button"
-                        className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                        onClick={() => handleSetOpen(false)}
-                      >
-                        <span className="sr-only">Close panel</span>
-                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                      </button>
-                    </div>
-                  </Transition.Child>
                   <div className="flex h-full flex-col overflow-y-scroll bg-[#0f3443] py-6 shadow-xl">
-                    <div className="px-4 sm:px-6">
-                      <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
+                    <div className="px-4 sm:px-6 flex items-start justify-between">
+                      <Dialog.Title className="text-base font-semibold leading-6 text-gray-900 -mt-3">
                         <Link href="/">
                           <a className="text-[#34e89e] no-underline outline-none hover:no-underline font-bold text-2xl lg:text-4xl">
                             <Image width={40} height={40} src="/rocket.svg" />
@@ -91,6 +71,19 @@ const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
                           </a>
                         </Link>
                       </Dialog.Title>
+                      <div className="ml-3 flex h-7 items-center">
+                        <button
+                          type="button"
+                          className="rounded-md bg-[#0f3443] text-gray-400 hover:text-gray-500"
+                          onClick={() => handleSetOpen(false)}
+                        >
+                          <span className="sr-only">Close panel</span>
+                          <XMarkIcon
+                            className="w-8 h-8 text-[#34e89e] outline-none"
+                            aria-hidden="true"
+                          />
+                        </button>
+                      </div>
                     </div>
 
                     <div className="relative mt-10 ml-5 flex-1 px-4 sm:px-6 flex flex-col justify-between">
