@@ -35,10 +35,10 @@ const social = [
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="fixed h-full z-50" onClose={handleSetOpen}>
+      <Dialog as="div" className="fixed h-screen z-50" onClose={handleSetOpen}>
         <div className="fixed inset-0 bg-gray-600 opacity-90" />
 
-        <div className="fixed inset-0 overflow-hidden">
+        <div className="fixed h-full inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
               <Transition.Child
