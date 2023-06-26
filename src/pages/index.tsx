@@ -27,7 +27,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Samiur</title>
         <meta name="description" content="Samiur" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
