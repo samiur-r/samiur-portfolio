@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import MobileNav from './MobileNav'
-// import MobileNav2 from './MobileNav2'
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -26,7 +25,6 @@ const Nav = () => {
       className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
     >
       <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
-      {/* <MobileNav2 open={isOpen} handleSetOpen={setIsOpen} /> */}
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link href="/">
