@@ -22,7 +22,6 @@ const Nav = () => {
 
   return (
     <nav
-      id="header"
       className={`${isScrolled ? 'bg-[#0f3443]' : ''} sticky w-full z-30 top-0`}
     >
       <MobileNav open={isOpen} handleSetOpen={setIsOpen} />
@@ -48,10 +47,7 @@ const Nav = () => {
             />
           </div>
         </div>
-        <div
-          className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-          id="nav-content"
-        >
+        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
           <ul className="text-white list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
               <Link href="/">
@@ -63,7 +59,7 @@ const Nav = () => {
             <li className="mr-3">
               <a
                 className="inline-block no-underline hover:text-[#34e89e] hover:text-underline py-2 px-4"
-                href="#projects"
+                // href="#projects"
               >
                 Projects
               </a>
@@ -77,7 +73,7 @@ const Nav = () => {
             </li> */}
           </ul>
           <a
-            href="#contact"
+            // href="#contact"
             className={`${
               isScrolled ? 'gradient text-white' : 'text-gray-800 bg-white'
             } mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
