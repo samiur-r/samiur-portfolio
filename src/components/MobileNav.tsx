@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
@@ -33,13 +33,24 @@ interface MobileNavProps {
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ open, handleSetOpen }) => {
+  const [scrollBehavior, setScrollBehavior] = useState('')
+
+  useEffect(() => {
+    if (open) setScrollBehavior('hidden')
+    else setScrollBehavior('auto')
+  }, [open])
+
+  useEffect(() => {
+    document.body.style.overflow = scrollBehavior
+
+    return () => {
+      document.body.style.overflow = 'auto' // Reset scroll behavior when the component unmounts
+    }
+  }, [scrollBehavior])
+
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog
-        as="div"
-        className="relative z-50 overflow-hidden"
-        onClose={handleSetOpen}
-      >
+      <Dialog as="div" className="relative z-50" onClose={handleSetOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
