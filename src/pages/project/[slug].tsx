@@ -24,6 +24,8 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       behavior: 'instant'
     })
   }, [])
