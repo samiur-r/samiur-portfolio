@@ -10,9 +10,9 @@ interface ProjectPageProps {
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
-  const content = project.description.split('\n\n').map((paragraph) => (
+  const content = project.description.split('\n\n').map((paragraph, index) => (
     <p
-      key={Math.random()}
+      key={`${index + Math.random()}`}
       className="my-3"
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
@@ -68,9 +68,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
       <div className="sm:w-1/2 relative sm:left-1/2 p-5 flex flex-col gap-20 py-20">
         {project.images &&
           project.images.length > 0 &&
-          project.images.map((image) => (
+          project.images.map((image, index) => (
             <Image
-              key={Math.random()}
+              key={`${index + Math.random()}`}
               src={image.url}
               width={image.width}
               height={image.height}
