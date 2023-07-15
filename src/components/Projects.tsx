@@ -32,10 +32,8 @@ const Projects = () => {
                     <div className="mr-8">{post.tech}</div>
                   </div>
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                    <a href={`/project/${post.slug}`}>
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </a>
+                    <span className="absolute inset-0" />
+                    {post.title}
                   </h3>
                 </article>
               </a>
