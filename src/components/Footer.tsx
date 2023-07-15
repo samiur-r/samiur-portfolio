@@ -57,6 +57,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center"
+                aria-label="whatsapp"
               >
                 <Image
                   src="/social/whatsapp.svg"
@@ -71,6 +72,7 @@ const Footer = () => {
                 href="https://wa.me/+8801744935905"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="whatsapp"
               >
                 +(880) 1744935905
               </a>
@@ -81,6 +83,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center"
+                aria-label="whatsapp"
               >
                 <Image
                   src="/social/gmail.svg"
