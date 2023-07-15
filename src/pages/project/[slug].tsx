@@ -75,6 +75,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
               width={image.width}
               height={image.height}
               objectFit="contain"
+              alt="project"
             />
           ))}
       </div>

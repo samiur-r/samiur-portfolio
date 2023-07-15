@@ -41,7 +41,7 @@ const Research = () => {
                   width={640}
                   height={544}
                   src="/research_banner.jpg"
-                  alt=""
+                  alt="research"
                   className="rounded-2xl bg-gray-50 object-cover"
                 />
               </div>

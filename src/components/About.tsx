@@ -24,12 +24,12 @@ const About = () => {
             </p>
           </div>
           <div className="w-full sm:w-1/2 p-6">
-            <Image src="/about_me-1.svg" width={387} height={281} />
+            <Image src="/about_me-1.svg" width={387} height={281} alt="about" />
           </div>
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
           <div className="w-full sm:w-1/2 p-6 mt-6">
-            <Image src="/about_me-2.svg" width={356} height={262} />
+            <Image src="/about_me-2.svg" width={356} height={262} alt="about" />
           </div>
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">

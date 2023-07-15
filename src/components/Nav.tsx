@@ -35,6 +35,7 @@ const Nav: React.FC<NavProps> = ({ handleSetOpen }) => {
                 height={40}
                 src="/rocket.svg"
                 className="mr-3"
+                alt="logo"
               />
               SAM.
             </a>

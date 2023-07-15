@@ -34,7 +34,7 @@ const Footer = () => {
               className="text-[#34e89e] no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
               href="#"
             >
-              <Image width={40} height={40} src="/rocket.svg" />
+              <Image width={40} height={40} src="/rocket.svg" alt="logo" />
               SAM.
             </a>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 className="text-gray-500 hover:text-gray-400"
               >
                 <span className="sr-only">{item.name}</span>
-                <Image src={item.icon} width={30} height={30} />
+                <Image src={item.icon} width={30} height={30} alt="social" />
               </a>
             ))}
           </div>
@@ -58,7 +58,12 @@ const Footer = () => {
                 rel="noreferrer"
                 className="flex items-center"
               >
-                <Image src="/social/whatsapp.svg" width={35} height={35} />
+                <Image
+                  src="/social/whatsapp.svg"
+                  width={35}
+                  height={35}
+                  alt="social"
+                />
               </a>
 
               <a
@@ -77,7 +82,12 @@ const Footer = () => {
                 rel="noreferrer"
                 className="flex items-center"
               >
-                <Image src="/social/gmail.svg" width={20} height={20} />
+                <Image
+                  src="/social/gmail.svg"
+                  width={20}
+                  height={20}
+                  alt="gmail"
+                />
               </a>
 
               <a

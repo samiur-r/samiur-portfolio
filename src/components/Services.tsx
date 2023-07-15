@@ -60,7 +60,12 @@ const Services = () => {
               <div className="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
                 {services.map((service) => (
                   <div key={service.title} className="flex gap-2 items-center">
-                    <Image src={service.logo} width={80} height={80} />
+                    <Image
+                      src={service.logo}
+                      width={80}
+                      height={80}
+                      alt="service"
+                    />
                     <h3 className="font-semibold">{service.title}</h3>
                   </div>
                 ))}
