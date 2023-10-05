@@ -3,18 +3,18 @@ import Image from 'next/image'
 
 const testimonials = [
   {
-    body: 'We worked with Samiur from the early planning stages of our website, through launch and ongoing. He helped us to research the best technologies/solutions available and produced very high quality code. I would happily work with him again given the opportunity. Thank you!',
+    body: 'Samiur truly excels in his field, demonstrating both expertise and dedication. His openness to feedback is commendable, ensuring that the end result meets the highest standards. Working with such a professional like Samiur is a refreshing experience. I appreciate his commitment to delivering quality work, and I will undoubtedly hire him again for future projects.',
     author: {
-      name: 'Dean Barrow',
-      handle: 'Tech Lead, Different Dog',
+      name: 'Randy Esperben',
+      handle: 'COO & Co-founder Nexus Clips',
       imageUrl: '/man.png'
     }
   },
   {
-    body: 'I was fortunate to have Samiur on my team of frontend developers . He knows his Vue ! ',
+    body: 'We worked with Samiur from the early planning stages of our website, through launch and ongoing. He helped us to research the best technologies/solutions available and produced very high quality code. I would happily work with him again given the opportunity. Thank you!',
     author: {
-      name: 'Mohammad Abudayyeh',
-      handle: 'DevOps Lead, Gluu',
+      name: 'Dean Barrow',
+      handle: 'Tech Lead, Different Dog',
       imageUrl: '/man.png'
     }
   },
@@ -24,6 +24,14 @@ const testimonials = [
       name: 'Pam Long',
       handle: 'COO, Curotec',
       imageUrl: '/woman.png'
+    }
+  },
+  {
+    body: 'I was fortunate to have Samiur on my team of frontend developers . He knows his Vue ! ',
+    author: {
+      name: 'Mohammad Abudayyeh',
+      handle: 'DevOps Lead, Gluu',
+      imageUrl: '/man.png'
     }
   },
   {
@@ -43,10 +51,10 @@ const testimonials = [
     }
   },
   {
-    body: 'Fantastic know on Typescript and JavaScript. Also efficient with react js.',
+    body: 'Samiur is a very good developer on Node.js and React.js, i reached out to him and i got a very fast response time, Professional, and have good communication I recommend working with him as you get 100% for what you pay.',
     author: {
-      name: 'Micheal Sokan',
-      handle: 'Frontend Developer, Capgemini',
+      name: 'Liran Ben',
+      handle: 'Founder & CEO, Xiah Legends',
       imageUrl: '/man.png'
     }
   }
