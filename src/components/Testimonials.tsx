@@ -49,18 +49,9 @@ const testimonials = [
       handle: 'Founder & CEO, Xiah Legends',
       imageUrl: '/man.png'
     }
-  },
-  {
-    body: 'Samiur is a very good developer on Node.js and React.js, i reached out to him and i got a very fast response time, Professional, and have good communication I recommend working with him as you get 100% for what you pay.',
-    author: {
-      name: 'Liran Ben',
-      handle: 'Founder & CEO, Xiah Legends',
-      imageUrl: '/man.png'
-    }
   }
-  // More testimonials...
 ]
-// Cutting-Edge Technologies, Client Satisfaction, Continuous Support
+
 const Testimonials = () => {
   return (
     <section className="bg-[#0f3443] py-8">

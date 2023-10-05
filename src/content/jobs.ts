@@ -63,21 +63,17 @@ const jobs = [
     ]
   },
   {
-    id: 5,
-    title: 'Sr. Full Stack Engineer (Contract)',
-    company: 'Boshamlan',
-    location: 'Kuwait',
-    url: 'https://kw.boshamlan.com/',
-    logo: '/jobs/boshamlan.svg',
+    id: 6,
+    title: 'Sr. Full Stack Engineer',
+    company: 'Material Index',
+    location: 'London, United Kingdom',
+    url: 'https://material-index.co',
+    logo: '/jobs/mi.jpeg',
     year: '2023 - ',
     description: [
-      'Senior Full Stack Engineer at Boshamlan, one of the largest property management companies in Kuwait generating around 100K USD per month.',
-      'Led the rebuild of their old Laravel platform, taking charge of design, architecture, and stack decisions.',
-      'Leveraged Next.js, TailwindCSS, Zustand, Node.js, and PostgreSQL for a modern and efficient platform.',
-      'Implemented Zustand for efficient state management and utilized Node.js to build robust backend logic and RESTful APIs.',
-      'Translated business needs into technical solutions, collaborating closely with designers and stakeholders.',
-      'Ensured scalability, performance, and maintainability, following best practices and industry standards.',
-      'Conducted thorough testing, debugging, and optimization for a high-quality and reliable platform.'
+      'As a Full Stack Engineer at Material Index, I am dedicated to revolutionizing the construction industry by enabling the re-use of construction materials. With the vision of reducing waste and carbon emissions, Material Index offers pre-demolition audits and facilitates the sourcing of secondary materials.',
+      'In my role, I contribute to the development of our innovative platform that provides invaluable insights into embodied carbon, price analysis, and testing data. By leveraging my expertise in full stack engineering, I collaborate with a talented team to enhance the user experience and streamline the process of material sourcing.',
+      'Together, we are driving sustainable practices in the construction sector, aiming to increase the reuse of materials and promote the lowest carbon option for construction projects. Join us in this mission to transform the industry and make a positive impact on the environment.'
     ]
   }
 ]
