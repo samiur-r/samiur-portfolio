@@ -57,7 +57,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center"
-                aria-label="whatsapp"
+                aria-label="Open WhatsApp chat with +(880) 1744935905"
               >
                 <Image
                   src="/social/whatsapp.svg"
@@ -72,18 +72,18 @@ const Footer = () => {
                 href="https://wa.me/+8801744935905"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="whatsapp"
+                aria-label="Open WhatsApp chat with +(880) 1744935905"
               >
                 +(880) 1744935905
               </a>
             </div>
             <div className="flex items-center gap-x-1 ml-1">
               <a
-                href="https://wa.me/+8801744935905"
+                href="mailto:samiur.rahman.akif@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center"
-                aria-label="whatsapp"
+                aria-label="Send an email to samiur.rahman.akif@gmail.com"
               >
                 <Image
                   src="/social/gmail.svg"
