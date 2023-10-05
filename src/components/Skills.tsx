@@ -5,14 +5,14 @@ const feItems = [
   { title: 'Typescript', img: '/skills-ts.svg' },
   { title: 'React', img: '/skills-react.svg' },
   { title: 'Next', img: '/skills-next.svg' },
-  { title: 'Vue', img: '/skills-vue.svg' },
-  { title: 'Nuxt', img: '/skills-nuxt.svg' },
-  { title: 'TailwindCSS', img: '/skills-tailwindcss.svg' }
+  { title: 'TailwindCSS', img: '/skills-tailwindcss.svg' },
+  { title: 'TensorFlow', img: '/skills-tensorflow.webp' },
+  { title: 'OpenCV', img: '/skills-opencv.webp' }
 ]
 
 const beItems = [
   { title: 'Node', img: '/skills-node.svg' },
-  { title: 'Laravel', img: '/skills-laravel.svg' },
+  { title: 'Flask', img: '/skills-flask.svg' },
   { title: 'PostgreSQL', img: '/skills-postgresql.svg' },
   { title: 'MongoDB', img: '/skills-mongodb.svg' },
   { title: 'AWS', img: '/skills-aws.svg' },

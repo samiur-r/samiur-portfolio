@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p className="uppercase tracking-loose w-full">This is me</p>
           <h1 className="my-4 text-5xl font-bold leading-tight">
-            Samiur. I am a Full Stack Engineer
+            Samiur. I am a AI-infused Full Stack Engineer
           </h1>
           <p className="leading-normal text-2xl mb-8">
             Empowering businesses with elegant and robust digital solutions
