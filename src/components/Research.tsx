@@ -71,7 +71,7 @@ const Research = () => {
                       </dl>
                       <div className="mt-8 flex items-center gap-x-6">
                         <a
-                          href="#contact"
+                          href={publication.href}
                           className=" flex gap-3 rounded-md gradient px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                         >
                           View Paper <ArrowRightIcon className="w-5 h-5" />

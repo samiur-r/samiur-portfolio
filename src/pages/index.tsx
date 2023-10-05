@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 
 import About from 'components/About'
 import Experience from 'components/Experience'
@@ -29,7 +30,12 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
       </Head>
+      <Analytics />
       <MobileNav open={isOpen} handleSetOpen={handleSetOpen} />
       <div className="leading-normal tracking-normal text-white gradient">
         <Nav handleSetOpen={handleSetOpen} />
