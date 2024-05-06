@@ -14,6 +14,49 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    slug: 'code-flight',
+    title: 'Personalized AI Coding Tutor',
+    href: 'https://my.codeflight.io/',
+    thumbnail: '/projects/code-flight/1.png',
+    tech: 'Next 14, OpenAI, PostgreSQL, Stripe',
+    description: `Code Flight guides each user through a tailored educational journey adapted to their goals, preferences, and existing skills. Here's how it works:
+
+    1. Users take a discovery quiz to outline their objectives and learning style.<br /><br />
+    
+    2. Through the power of artificial intelligence, we build bespoke structured coding curricula adapted to individual needs.<br /><br />
+    
+    3. Each path features:<br />
+       - Big-picture concept explanations with examples<br />
+       - Interactive practice problems<br />
+       - Capstone coding projects<br />
+       - Up-to-date in-demand content<br /><br />
+    
+    But what really sets Code Flight apart is its personalization. No more one-size-fits-all courses. Just an educational experience precisely tailored to propel you towards coding mastery efficiently.
+    `,
+    images: [
+      { url: '/projects/code-flight/2.png', width: 1920, height: 5181 },
+      { url: '/projects/code-flight/3.png', width: 1920, height: 931 },
+      { url: '/projects/code-flight/4.png', width: 1920, height: 14583 },
+      { url: '/projects/code-flight/5.png', width: 734, height: 580 }
+    ]
+  },
+  {
+    id: 2,
+    slug: 'subscription-based-e-commerce',
+    title: 'Dynamic company portfolio',
+    href: 'https://www.skeldus.com/',
+    thumbnail: '/projects/skeldus/1.png',
+    tech: 'Next 14, Strapi, Hubspot',
+    description: `Leveraging the power of Next.js, we've built a fast, scalable, and highly responsive web application that ensures seamless navigation and optimal performance across all devices. To complement this, we integrated Strapi as our headless CMS, enabling dynamic content management and empowering the Skeldus team with the flexibility to update content effortlessly, in real-time.`,
+    images: [
+      { url: '/projects/skeldus/1.png', width: 1920, height: 6229 },
+      { url: '/projects/skeldus/2.png', width: 1920, height: 2643 },
+      { url: '/projects/skeldus/3.png', width: 1920, height: 2332 },
+      { url: '/projects/skeldus/4.png', width: 1920, height: 3091 }
+    ]
+  },
+  {
+    id: 3,
     slug: 'subscription-based-e-commerce',
     title: 'Subscription based e-commerce',
     href: 'https://differentdog.com/',
@@ -26,7 +69,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 2,
+    id: 4,
     slug: 'boshamlan',
     title: 'Boshamlan (Real State)',
     href: 'https://kw.boshamlan.com',
@@ -39,7 +82,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 5,
     slug: 'venueQ',
     title: 'VenueQ',
     thumbnail: '/projects/venueq/1.png',
@@ -53,7 +96,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 6,
     slug: 'product',
     title: 'Product',
     href: 'https://www.plume.com/',
@@ -67,7 +110,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 7,
     slug: 'blockchain-nlp',
     title: 'Blockchain & NLP',
     thumbnail: '/projects/ethfakenews/1.png',
@@ -80,7 +123,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 8,
     slug: 'saas',
     title: 'SAAS',
     href: 'https://www.devcurate.co/',
@@ -90,7 +133,7 @@ const projects: Project[] = [
     images: [{ url: '/projects/devcurate/1.png', width: 1366, height: 767 }]
   },
   {
-    id: 7,
+    id: 9,
     slug: 'lms',
     title: 'LMS',
     thumbnail: '/projects/lms/1.png',
@@ -104,7 +147,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 8,
+    id: 10,
     slug: 'web3',
     title: 'Web3',
     href: 'https://apevolutionclub.com/',
@@ -118,7 +161,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 9,
+    id: 11,
     slug: 'book-api',
     title: 'Book Api',
     thumbnail: '/projects/booklist/1.png',
